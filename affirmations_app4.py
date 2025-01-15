@@ -2,7 +2,7 @@ import streamlit as st
 import random
 import pandas as pd
 
-def load_affirmations(file_path):
+def load_affirmations():
     try:
         df = pd.read_csv('possitive_affirmation.csv')
         return df['Affirmation'].tolist()
@@ -10,7 +10,7 @@ def load_affirmations(file_path):
         st.error(f"Error loading the CSV file: {e}")
         return []
 
-affirmations = load_affirmations(file_path)
+affirmations = load_affirmations()
 
 if not affirmations:
     affirmations = [
