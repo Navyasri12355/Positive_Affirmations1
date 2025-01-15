@@ -4,15 +4,11 @@ import pandas as pd
 
 def load_affirmations(file_path):
     try:
-        df = pd.read_csv(file_path)
-        # Assuming the column with affirmations is named 'affirmation'
+        df = pd.read_csv('possitive_affirmation.csv')
         return df['Affirmation'].tolist()
     except Exception as e:
         st.error(f"Error loading the CSV file: {e}")
         return []
-
-# Specify the path to your CSV file here
-file_path = r"C:\Users\navya\Desktop\RVCE\2nd_Year\DTL\Pos_Aff\possitive_affirmation.csv"
 
 affirmations = load_affirmations(file_path)
 
