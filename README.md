@@ -17,13 +17,17 @@ Welcome to the **Positive Affirmations** app — a calming space that serves a n
 
 ## 📦 Requirements
 Make sure you have the following Python libraries installed:
+```bash
 pip install streamlit pandas
+```
 
 ---
 
 ## 🛠️ How to Run the App
 - Clone this repository and run the app using Streamlit:
+```bash
 streamlit run app.py
+```
 - If a possitive_affirmation.csv file exists in the same directory, it will be loaded. Otherwise, a default list of affirmations will be used.
 
 ---
