@@ -19,6 +19,8 @@ Welcome to the **Positive Affirmations** app — a calming space that serves a n
 Make sure you have the following Python libraries installed:
 pip install streamlit pandas
 
+---
+
 ## 🛠️ How to Run the App
 - Clone this repository and run the app using Streamlit:
 streamlit run app.py
